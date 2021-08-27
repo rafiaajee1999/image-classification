@@ -11,7 +11,7 @@ data=pd.read_csv('mnist.csv')
 #viewing column heads
 data.head()
 #extracting data from the dataset and viewing them up close
-a=data.iloc[3, 1:], values
+a=data.iloc[3, 1:].values
 #reshaping the extracted data into a resonable size
 a=a.reshape(28,28).astype('unit 8')
 plt.imshow(a)
